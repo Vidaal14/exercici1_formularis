@@ -144,5 +144,5 @@ footer p{
     flex-direction: column;
 }
 .num-naixement{
-    
+    display: flex;
 }
