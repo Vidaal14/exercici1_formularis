@@ -17,21 +17,99 @@
         <main>
             <form action="info.html" method="get">
                 <section id="dades-personals">
-
+                    <h2>1. Dades personals</h2>
+                    <div class="nom-cognom">
+                        <div class="nom">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" placeholder="Escriu el teu nom" required>
+                        </div>
+                        <div class="cognom">
+                            <label for="cognom">Cognoms *</label>
+                            <input type="text" id="cognom" placeholder="Escriu els cognoms" required>
+                        </div>
+                    </div>
+                    <div class="correito">
+                        <label for="correo">Correu electrònic *</label>
+                        <input type="text" id="correo" placeholder="exenple@correu.com" required>
+                    </div>
+                    <div class="num-naixement">
+                        <div class="telefn">
+                            <label for="telefon">Telèfon</label>
+                            <input type="number" id="telefon" name="tlfn" min="9" max="9" placeholder="600 000 000">
+                        </div>
+                        <div class="data-de-naixement">
+                            <label for="naixement">Data de naixement</label>
+                            <input type="date" id="naixement">                            
+                        </div>
+                    </div>
+                    <div class="contra">
+                        <label for="contra">Contrasenya *</label>
+                        <input type="text" id="contra" placeholder="Introdueix una contrasenya" required>
+                    </div>
                 </section>
                 <section id="informacio-academica">
+                    <h2>2. Informació acadèmica</h2>
+                    <div class="select">
+                        <label for="curs">Curs actual *</label>
+                        <select name="curso" id="curs" placeholder="Selecciona un curs" required>
+                            <option value="" disabled selected>Selecciona un curs</option>
+                            <option value="1">1r</option>
+                            <option value="2">2n</option>
+                            <option value="3">3r</option>
+                            <option value="4">4t</option>
+                            <option value="5">5è</option>
+                            <option value="6">6è</option>
+                        </select>
+                    </div>
+                    <div class="grupo-radio">
+                        <p class="text-pregunta">Activitat que vols realitzar *</p>
+                        <label class="opcion-radio">
+                            <input type="radio" name="activitat" value="programacio" required>
+                            <span>Programació</span>
+                        </label>
 
+                        <label class="opcion-radio">
+                            <input type="radio" name="activitat" value="robotica">
+                            <span>Robòtica</span>
+                        </label>
+
+                        <label class="opcion-radio">
+                            <input type="radio" name="activitat" value="disseny-web">
+                            <span>Disseny web</span>
+                        </label>
+
+                        <label class="opcion-radio">
+                            <input type="radio" name="activitat" value="esports">
+                             <span>Esports</span>
+                        </label>
+                    </div>
+                    <div class="dies">
+                        <p>Dies disponibles</p>
+                        <label for="dilluns">Dilluns</label>
+                        <input type="checkbox" id="dilluns">
+                        <label for="dimarts">Dimarts</label>
+                        <input type="checkbox" id="dimarts">
+                        <label for="dimecres">Dimecres</label>
+                        <input type="checkbox" id="dimecres">
+                        <label for="dijous">Dijous</label>
+                        <input type="checkbox" id="dijous">
+                        <label for="divendres">Divendres</label>
+                        <input type="checkbox" id="divendres">
+                    </div>
                 </section>
                 <section id="informacio-addicional">
-
+                    <h2>3. Informació addicional</h2>
                 </section>
                 <section id="final">
-                    <label for="politica">Accepto la política de privacitat i les condicions d'inscripció</label>
-                    <input type="checkbox" id="politica" required>
+                    <div class="privacidad">
+                        <label for="politica">Accepto la política de privacitat i les condicions d'inscripció. *</label>
+                        <input type="checkbox" id="politica" class="checkbox-ult" required>
+                    </div>
                     <div class="btns">
                         <button  class="btn-env">Enviar inscripció</button>
                         <button class="btn-net">Netejar</button>
                     </div>
+                    <div style="text-align: center; font-size: 9pt;">* Camps obligatoris</div>
                 </section>
             </form>
         </main>
