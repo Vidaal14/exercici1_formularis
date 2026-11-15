@@ -131,7 +131,9 @@ footer p{
     display: flex;
     flex-direction: column;
 }
-#nom
+#nom{
+    width: 50&;
+}
 .cognom{
     display: flex;
     flex-direction: column;
