@@ -140,5 +140,6 @@ footer p{
     flex-direction: column;
 }
 .data-de-naixement{
-    
+    display: flex;
+    flex-direction: column;
 }
