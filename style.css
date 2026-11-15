@@ -135,3 +135,7 @@ footer p{
     display: flex;
     flex-direction: column;
 }
+.telefn{
+    display: flex;
+    flex-direction: column;
+}
