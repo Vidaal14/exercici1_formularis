@@ -43,6 +43,30 @@ main{
     padding: 5px;
     margin-bottom: 15px;
 }
+#final{
+    padding: 5px;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.btn-env{
+    width: 90%;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+.btn-net{
+    width: 10%;
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    padding: 10px;
+    border: solid #d9d9d9 .2px;
+}
 
 footer{
     margin: 0px 20px;
